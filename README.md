@@ -1,62 +1,174 @@
-# Natural Language Processing (NLP) Journey — From Basics to Harry Potter Sentiment Analysis 
+# Summer of Code (SOC) 2025 — Learning Report
+---
 
-Welcome to the **NLP Learning and Sentiment Analysis Project**, a hands-on, 8-week guided learning journey into the world of Natural Language Processing. This project is designed to equip you with both theoretical foundations and practical experience — culminating in a final assignment where you'll analyze the emotional arc of a **Harry Potter novel**.
+## 📌 Overview
+
+**Program:** Summer of Code (SOC) 2025  
+**Duration:** 8 weeks  
+**Focus Areas:** Python, Machine Learning, NLP, Data Science  
+**Learning Platforms:** YouTube (Codebasics), Coursera  
+**Goal:** To gain a practical and conceptual understanding of key data science workflows including data preprocessing, model building, and deployment.
 
 ---
 
-## What You'll Learn
+## 📘 Topics Covered
 
-Over 8 weeks, you’ll master key NLP concepts:
+### 1. 🐍 Python Programming
 
-- Tokenization, Stop Words, Stemming, Lemmatization
-- Part-of-Speech (POS) Tagging
-- Bag of Words (BoW), TF-IDF, and Word Embeddings
-- Text Classification using Naive Bayes and Logistic Regression
-- Sentiment Analysis using real-world datasets
-- Visualizing emotional trajectories in narrative text
+I started with Python as the foundation for all the projects. Covered:
 
----
+- **Data types and operations** (integers, strings, floats, lists, dictionaries, tuples)
+- **Control structures** (if-else, loops, functions)
+- **List comprehensions** and **lambda functions**
+- **Modules and Packages**
+- File I/O operations
+- Error handling using `try-except`
+- Using `argparse` and `os` modules for scripting
 
-## Final Project
-
-> **Deconstruct the emotional journey of a Harry Potter novel.**
-
-You’ll:
-- Break the novel into chapters
-- Perform sentiment analysis on each section
-- Track how the overall mood shifts over time
-- Visualize the emotional trajectories of key characters
+Practical Applications:
+- Built simple CLI scripts for text file processing
+- Parsed and cleaned raw data using regular expressions and Python string methods
 
 ---
 
-## Weekly Breakdown
+### 2. 🤖 Machine Learning Fundamentals
 
-### Week 1–2: Introduction to NLP
-- 🔹 **Watch**: [End to End NLP by Codebasics](https://www.youtube.com/playlist?list=PLZoTAELRMXVPkl7oRvzyNnyj1HS4wt2K-)
-- 🔹 **Learn**: Tokenization, stop words, stemming, lemmatization, POS tagging, BoW, TF-IDF, embeddings
+Using Python and scikit-learn, I learned:
 
-### Week 3–4: Vector Spaces & Text Classification
-- 🔹 **Course**: [Coursera - NLP with Classification and Vector Spaces](https://www.coursera.org/learn/classification-vector-spaces-in-nlp)
-- 🔹 **Topics**: Text vectorization, similarity metrics, Naive Bayes, Logistic Regression
+- **Supervised Learning:**
+  - Regression (Linear, Polynomial)
+  - Classification (Logistic Regression, KNN, Decision Trees)
+  - Evaluation metrics: Accuracy, Precision, Recall, F1-score, Confusion Matrix
 
-### Week 5–6: Sentiment Analysis
-- 🔹 **Course**: [Coursera - Applied Text Mining in Python](https://www.coursera.org/learn/python-text-mining)
-- 🔹 **Topics**: Sentiment model training, evaluation, and application
+- **Unsupervised Learning:**
+  - K-Means Clustering
+  - Hierarchical Clustering
+  - Principal Component Analysis (PCA)
 
-### Week 7–8: Capstone Project
-- 🔹 Apply everything you've learned
-- 🔹 Segment the Harry Potter novel and analyze sentiment
-- 🔹 Visualize and interpret emotional arcs of the narrative and its characters
+- **Model Evaluation:**
+  - Train/test split
+  - Cross-validation
+  - GridSearchCV
 
-### Week 9–10: (Optional)
-- 🔹 Extra time for catch-up, reinforcement, or advanced mentoring
+Practical Applications:
+- Built and evaluated classification models on toy datasets
+- Applied clustering techniques to customer segmentation problems
 
 ---
 
-## Resources
+### 3. 🧠 NLP with Codebasics (YouTube)
 
-- YouTube: [End to End NLP by Codebasics](https://www.youtube.com/playlist?list=PLZoTAELRMXVPkl7oRvzyNnyj1HS4wt2K-)
--  Coursera:
-  - [NLP with Classification and Vector Spaces](https://www.coursera.org/learn/classification-vector-spaces-in-nlp)
-  - [Applied Text Mining in Python](https://www.coursera.org/learn/python-text-mining)
-- *Speech and Language Processing* by Jurafsky & Martin (Optional but recommended)
+Followed the entire [Codebasics NLP Playlist](https://www.youtube.com/playlist?list=PLeo1K3hjS3usJuxZZUBdjxm467kxW5rLZ). Topics included:
+
+- **Text Preprocessing:**
+  - Tokenization
+  - Stopwords removal
+  - Stemming and Lemmatization
+  - Bag of Words and TF-IDF
+
+- **Basic NLP models:**
+  - Naive Bayes classifier
+  - Logistic Regression on text data
+
+- **Vectorization:**
+  - CountVectorizer
+  - TfidfVectorizer
+
+Practical Application:
+- Built a spam email classifier from scratch
+- Created a simple sentiment analyzer using movie review datasets
+
+---
+
+### 4. 📚 Coursera: Natural Language Processing with Classification and Vector Spaces
+
+A deeper dive into classical NLP. Key learnings included:
+
+- **Text Vectorization Techniques:**
+  - TF-IDF
+  - Word co-occurrence matrix
+  - Cosine similarity
+
+- **NLP-specific Models:**
+  - Naive Bayes
+  - Logistic Regression
+
+- **Sentiment classification using vectorized text**
+
+- **Mathematics behind vector spaces:**
+  - Dot product
+  - Euclidean distance
+  - Similarity measures
+
+- **Assignments:**
+  - Implemented a vector-space model for product review classification
+  - Built a sentiment classifier using logistic regression with TF-IDF features
+
+---
+
+### 5. 🧾 Coursera: Applied Text Mining in Python (UMich)
+
+This course introduced the application of text mining on large corpora. Key learnings:
+
+- **Using NLTK and Scikit-learn pipelines**
+- **Term Frequency and Inverse Document Frequency**
+- **Topic Modeling:**
+  - Latent Dirichlet Allocation (LDA)
+  - Non-negative Matrix Factorization (NMF)
+
+- **Named Entity Recognition (NER)**
+- **Building pipelines for large-scale text classification**
+
+Assignments:
+- Applied LDA and NMF to uncover topics in political speeches
+- Built a topic classifier using movie synopsis datasets
+
+---
+
+### 6. 📊 Coursera: Data Visualization with Python (UMich)
+
+Learned to visualize and tell compelling data stories using:
+
+- **Matplotlib:**
+  - Line plots, bar plots, scatter plots
+  - Histograms, box plots, subplots
+
+- **Seaborn:**
+  - Heatmaps
+  - Pair plots
+  - Distribution plots
+
+- **Advanced Plotting:**
+  - Plotly and interactive visualizations
+
+- **Data Wrangling with Pandas:**
+  - Aggregation and grouping
+  - Merging datasets for visualization
+
+Projects:
+- Built visual dashboards for COVID-19 datasets
+- Created correlation heatmaps to understand features in a loan prediction dataset
+
+---
+
+## 🛠️ Tools & Libraries Used
+
+- Python 3.x
+- Jupyter Notebook / Google Colab
+- NumPy, Pandas
+- Scikit-learn
+- Matplotlib, Seaborn, Plotly
+- NLTK, spaCy
+- Git, GitHub
+
+---
+
+## 🎯 Key Takeaways
+
+- Strengthened Python fundamentals and hands-on coding practices
+- Gained a solid understanding of machine learning workflows
+- Developed NLP projects from scratch using vectorization and classification
+- Understood real-world applications of text mining and data visualization
+- Improved ability to communicate data insights through visual storytelling
+
+---
